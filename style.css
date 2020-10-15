@@ -9,9 +9,7 @@
 	vertical-align: baseline;
 	box-sizing: border-box;
 }
-p{
-  color: blue;
-}
+
 body{
   width: 80%;
   margin: auto;
@@ -30,15 +28,18 @@ main{
   position: absolute;
 }
 #bola{
-  height: 228px;
-  background-image: url(img/bola.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 73%;
-  top: 254px;
-  position: relative;
-  width: 34%;
-  margin: auto;
+      height: 265px;
+      background-image: url(img/bola.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      top: 300px;
+      position: relative;
+      width: 34%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 }
 
 #bola:hover {
@@ -69,4 +70,9 @@ main{
   background-repeat: no-repeat;
   background-size: contain;
   height: 42px;
+}
+
+#contestantName{
+  color: red;
+
 }
