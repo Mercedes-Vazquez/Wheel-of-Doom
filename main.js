@@ -1,9 +1,26 @@
 'use strict';
+//"¡after show the name for a few seconds clean the ball¡"?
 
+
+let names = ["Lucas","Laura","Estefanie","Mercedes","Giacomo","Gabri"];
+let selected = [];
+
+//Click on a buttom and choose one name
 function chooseName(){
-    let names = ["Lucas","Laura","Estefanie","Mercedes","Giacomo","Gabri"];
-    let i = Math.round(Math.random()*5);
+    let n = names.length;
+    let i = Math.floor(Math.random()*n);
     document.getElementById("contestantName").innerHTML = names[i];
+//Take out the choosen name from the array
+    let selectedName = names[i];
+    names.splice(i, 1);   
+    selected.push(selectedName); 
+    n--;
+//When the array name is cero reset the array again
+    if (n < 1){
+        names = selected;
+        selected = [];
+    }
 }
+
 
 
