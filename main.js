@@ -5,13 +5,15 @@
 let names = ["Lucas","Laura","Estefanie","Mercedes","Giacomo","Gabri"];
 let selected = [];
 
+
 //Click on a buttom and choose one name
 function chooseName(){
     let n = names.length;
     let i = Math.floor(Math.random()*n);
-    document.getElementById("contestantName").innerHTML = names[i];
-//Take out the choosen name from the array
     let selectedName = names[i];
+    document.getElementById("contestantName").innerHTML = selectedName;
+//Take out the choosen name from the array
+    
     names.splice(i, 1);   
     selected.push(selectedName); 
     n--;
@@ -20,6 +22,7 @@ function chooseName(){
         names = selected;
         selected = [];
     }
+    document.getElementById("SelectedNames").innerHTML = selected;
 }
 
 

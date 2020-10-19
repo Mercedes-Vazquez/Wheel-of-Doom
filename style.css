@@ -66,6 +66,6 @@ main{
   font-family: 'bloody';
 }
 
-#sacrificeList{
-  
+#selectedNames{
+  color: red;
 }
