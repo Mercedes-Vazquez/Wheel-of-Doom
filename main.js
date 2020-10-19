@@ -15,14 +15,14 @@ function chooseName(){
 //Take out the choosen name from the array
     
     names.splice(i, 1);   
-    selected.push(selectedName); 
+    selected.push("<li>" + selectedName + "</li>"); 
     n--;
 //When the array name is cero reset the array again
     if (n < 1){
         names = selected;
         selected = [];
     }
-    document.getElementById("SelectedNames").innerHTML = selected;
+    document.getElementById("selectedNames").innerHTML = selected;
 }
 
 
