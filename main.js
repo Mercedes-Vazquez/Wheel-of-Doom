@@ -15,9 +15,13 @@ function chooseName(){
 //Take out the choosen name from the array
     
     names.splice(i, 1);   
+<<<<<<< Updated upstream
     
     selected.push("<li>" + selectedName + "</li>"); 
    
+=======
+    selected.push("<li>" + selectedName + "</li>"); 
+>>>>>>> Stashed changes
     n--;
 //When the array name is cero reset the array again
     if (n < 1){
