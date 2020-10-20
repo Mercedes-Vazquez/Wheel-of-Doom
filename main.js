@@ -16,6 +16,7 @@ function chooseName(){
     
     names.splice(i, 1);       
     selected.push("<li>" + selectedName + "</li>"); 
+    document.getElementById("selectedNames").innerHTML = selected.join('');
     n--;
 //When the array name is cero reset the array again
 
