@@ -14,21 +14,18 @@ function chooseName(){
     document.getElementById("contestantName").innerHTML = selectedName;
 //Take out the choosen name from the array
     
-    names.splice(i, 1);   
-<<<<<<< Updated upstream
-    
+    names.splice(i, 1);       
     selected.push("<li>" + selectedName + "</li>"); 
-   
-=======
-    selected.push("<li>" + selectedName + "</li>"); 
->>>>>>> Stashed changes
     n--;
 //When the array name is cero reset the array again
+
     if (n < 1){
         names = selected;
         selected = [];
     }
-    document.getElementById("selectedNames").innerHTML = selected;
+    
+    console.log(names);
+    console.log(selected);
 }
 
 
