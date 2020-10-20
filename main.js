@@ -2,7 +2,7 @@
 //"¡after show the name for a few seconds clean the ball¡"?
 
 
-let names = ["Lucas","Laura","Estefanie","Mercedes","Giacomo","Gabri"];
+let names = ["Lucas","Laura","Estefanie","Mercedes","Giacomo","Gabri","Lucas","Laura","Estefanie","Mercedes","Giacomo","Gabri","Lucas","Laura","Estefanie","Mercedes","Giacomo","Gabri","Lucas","Laura","Estefanie","Mercedes","Giacomo","Gabri","Lucas","Laura","Estefanie","Mercedes","Giacomo","Gabri"];
 let selected = [];
 
 
