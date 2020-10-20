@@ -68,13 +68,10 @@ main{
 
 #selectedNames{
   color: red;
-<<<<<<< Updated upstream
   font-family: 'bloody';
-=======
 
 }
 #listOfNames{
   display: flex;
   flex-direction: column;
->>>>>>> Stashed changes
 }
