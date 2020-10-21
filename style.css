@@ -87,19 +87,10 @@ main{
 #selectedNames{
   color: red;
   font-family: 'bloody';
-<<<<<<< HEAD
-
-=======
   font-size: 3vw;
   flex-direction: column;
->>>>>>> 9393648fac61084893c52f27744fee736633cb83
 }
 
 #boxSelectedNames{
   display: flex;
-<<<<<<< HEAD
-  flex-direction: column;
 }
-=======
-}
->>>>>>> 9393648fac61084893c52f27744fee736633cb83
