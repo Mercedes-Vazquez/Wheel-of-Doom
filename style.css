@@ -27,9 +27,46 @@
     url('text/bloody.TTF');
 }
 
-body{
+/* body{
   width: 100vw;
   margin: auto;
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  position: absolute; 
+}
+@media only screen and (max-device-width: 767px) {
+  body {
+       background-image: url(img/background.jpg);
+       
+   }
+  }
+  
+  @media only screen and (max-width: 767px) {
+  body {
+       background-image: url(img/background.jpg);
+       
+   }
+  } */
+  @media only screen and (max-width: 600px){
+    body {
+        width: 100%;
+      
+    }
+}
+
+body {
+    
+    background-image: url(img/background.jpg);
+    background-position: top center;   
+    background-repeat: no-repeat;   
+    background-attachment: scroll;   
+    background-size: cover;   
+    background-color: #FFF;    
+    text-align: center;
+    color: #000;
 }
 
 h1{
@@ -47,13 +84,8 @@ font-size: 8vw;
 }
 
 main{
-  position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url(img/background.jpg);
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
 }
 
 #bolaContainer{
@@ -62,13 +94,12 @@ main{
 }
 
 #bola {
-  height: 80%;
+  height: 60%;
   border: solid 2px red;
   background-image: url(img/bola.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 55%;
-  top: 200px;
   position: relative;
   width: 45%;
   margin: auto;
@@ -93,4 +124,12 @@ main{
 
 #boxSelectedNames{
   display: flex;
+  top: 7em;
+  position: fixed;
+  padding: 1em;
+  
+}
+#footer{
+  background-image: initial;
+  height: 1000px;
 }
