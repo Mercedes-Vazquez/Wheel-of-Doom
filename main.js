@@ -2,7 +2,7 @@
 //"¡after show the name for a few seconds clean the ball¡"?
 
 
-let names = ["Lucas","Laura","Estefanie","Mercedes","Giacomo","Gabri"];
+let names = ["Lucas","Laura","Estefanie","Mercedes","Giacomo","Gabri","Giselle","Laura R","Quim","Olga","Moi","Jose","Jackson","Carmen","Alejandra","Lorena","Loredana","Alvaro","Rene","MaxPower","Isma","Jorge","Sergi P","Vanessa"];
 let selected = [];
 
 
@@ -12,12 +12,15 @@ function chooseName(){
     let i = Math.floor(Math.random()*n);
     let selectedName = names[i];
     document.getElementById("contestantName").innerHTML = selectedName;
+
+
 //Take out the choosen name from the array
     
     names.splice(i, 1);       
     selected.push("<li>" + selectedName + "</li>"); 
     document.getElementById("selectedNames").innerHTML = selected.join('');
     n--;
+
 //When the array name is cero reset the array again
 
     if (n < 1){
@@ -28,6 +31,7 @@ function chooseName(){
     console.log(names);
     console.log(selected);
 }
+
 
 
 

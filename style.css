@@ -1,5 +1,5 @@
 *{
-	margin: 0;
+  margin: 0;
 	padding: 0;
 	list-style: none;
 	text-decoration: none;
@@ -9,6 +9,17 @@
 	vertical-align: baseline;
 	box-sizing: border-box;
 }
+@keyframes zoominoutsinglefeatured {
+  0% {
+      transform: scale(1,1);
+  }
+  50% {
+      transform: scale(1.2,1.2);
+  }
+  100% {
+      transform: scale(1,1);
+  }
+}
 
 @font-face{
   font-family: 'bloody';
@@ -17,8 +28,12 @@
 }
 
 body{
-  width: 99%;
+  width: 100vw;
   margin: auto;
+}
+
+h1{
+font-size: 8vw;
 }
 
 #cannoliTitle{
@@ -41,12 +56,18 @@ main{
   background-repeat: no-repeat;
 }
 
-#bola{
-  height: 265px;
+#bolaContainer{
+  height: 35em;
+  border: solid 2px red;
+}
+
+#bola {
+  height: 80%;
+  border: solid 2px red;
   background-image: url(img/bola.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 55%;
   top: 200px;
   position: relative;
   width: 45%;
@@ -54,24 +75,31 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#bola:hover {
-  cursor: pointer;
-  background-size: 106%;
+  animation: zoominoutsinglefeatured 1s infinite;
 }
 
 #contestantName{
   color: #340B0B;
   font-family: 'bloody';
+  font-size: 4vw;
 }
 
 #selectedNames{
   color: red;
   font-family: 'bloody';
+<<<<<<< HEAD
 
+=======
+  font-size: 3vw;
+  flex-direction: column;
+>>>>>>> 9393648fac61084893c52f27744fee736633cb83
 }
-#listOfNames{
+
+#boxSelectedNames{
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
 }
+=======
+}
+>>>>>>> 9393648fac61084893c52f27744fee736633cb83
