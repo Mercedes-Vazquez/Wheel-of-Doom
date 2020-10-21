@@ -52,12 +52,18 @@ main{
   background-repeat: no-repeat;
 }
 
-#bola{
-  height: 265px;
+#bolaContainer{
+  height: 35em;
+  border: solid 2px red;
+}
+
+#bola {
+  height: 80%;
+  border: solid 2px red;
   background-image: url(img/bola.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 55%;
   top: 200px;
   position: relative;
   width: 45%;
@@ -80,11 +86,13 @@ main{
 #selectedNames{
   color: red;
   font-family: 'bloody';
+
 }
 
 #listOfNames{
   display: flex;
   flex-direction: column;
 }
+
 
 
