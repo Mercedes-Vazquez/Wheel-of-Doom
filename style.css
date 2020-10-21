@@ -28,8 +28,12 @@
 }
 
 body{
-  width: 99%;
+  width: 100vw;
   margin: auto;
+}
+
+h1{
+font-size: 8vw;
 }
 
 #cannoliTitle{
@@ -68,23 +72,19 @@ main{
   animation: zoominoutsinglefeatured 1s infinite;
 }
 
-#bola:hover {
-  cursor: pointer;
-}
-
 #contestantName{
   color: #340B0B;
   font-family: 'bloody';
+  font-size: 4vw;
 }
 
 #selectedNames{
   color: red;
   font-family: 'bloody';
-}
-
-#listOfNames{
-  display: flex;
+  font-size: 3vw;
   flex-direction: column;
 }
 
-
+#boxSelectedNames{
+  display: flex;
+}
