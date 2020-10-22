@@ -9,6 +9,7 @@
 	vertical-align: baseline;
 	box-sizing: border-box;
 }
+
 @keyframes zoominoutsinglefeatured {
   0% {
       transform: scale(1,1);
@@ -27,47 +28,24 @@
     url('text/bloody.TTF');
 }
 
-/* body{
-  width: 100vw;
-  margin: auto;
-  background-image: url(img/background.jpg);
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  position: absolute; 
+.background {
+    background-image: url(img/background.jpg);
+    background-position-x: center;   
+    background-repeat: no-repeat;   
+    background-size: cover;      
+    background-color: black;
 }
-@media only screen and (max-device-width: 767px) {
-  body {
-       background-image: url(img/background.jpg);
-       
-   }
-  }
-  
-  @media only screen and (max-width: 767px) {
-  body {
-       background-image: url(img/background.jpg);
-       
-   }
-  } */
-  @media only screen and (max-width: 600px){
-    body {
-        width: 100%;
-      
+
+@media (min-width: 600px){
+  .background {
+    background-image: url(img/background-big.jpg);
+    background-position-x: center;   
+    background-repeat: no-repeat;   
+    background-size: cover;      
+    background-color: black;
     }
 }
 
-body {
-    
-    background-image: url(img/background.jpg);
-    background-position: top center;   
-    background-repeat: no-repeat;   
-    background-attachment: scroll;   
-    background-size: cover;   
-    background-color: #FFF;    
-    text-align: center;
-    color: #000;
-}
 
 h1{
 font-size: 8vw;
@@ -90,18 +68,18 @@ main{
 
 #bolaContainer{
   height: 35em;
-  border: solid 2px red;
+  /* border: solid 2px red; */
 }
 
 #bola {
-  height: 60%;
+  height: 20em;
   border: solid 2px red;
   background-image: url(img/bola.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 55%;
+  background-size: 30vw;
   position: relative;
-  width: 45%;
+  width: 20em;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -128,8 +106,4 @@ main{
   position: fixed;
   padding: 1em;
   
-}
-#footer{
-  background-image: initial;
-  height: 1000px;
 }
